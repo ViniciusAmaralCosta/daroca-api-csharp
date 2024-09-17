@@ -58,6 +58,8 @@ public class StockController : ControllerBase {
         return NoContent();
     }
 
+    
+
     [HttpDelete("{id}")]
     public ActionResult<Stock> DeleteStock(int id) {
         var stock = this.context.Stock.Find(id);
